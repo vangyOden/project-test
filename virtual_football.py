@@ -15,12 +15,12 @@ virtual_time = 0
 # list of match activities
 ACTIVITIES = ["GOAL", "FREE KICK", "PENALTY", "CORNER"]
 
-# this code declares any match event with a time stamp
+# this code will declare any match event with a time stamp
 def match_status(message, current_minute):
     print(f"[{current_minute:02d}:00] {message}")
 
 
-# this code will a team randomly to assign activities 
+# this code will select a team randomly to assign match activities 
 def get_random_team():
     return random.choice([home_team_name, away_team_name])
 
@@ -36,7 +36,7 @@ def match_engine(current_minute):
         else:
             away_team_score += 1
         
-        # the function will display match activities in the terminal
+        # this function will display match activities in the terminal
         match_status(
             f"GOAL for {team}! Score: {home_team_score} - {away_team_score}",
             current_minute
@@ -52,7 +52,7 @@ def start_match():
 # this function displays the final match status when the game is over
 def end_match():
     print(f"[90:00] Match ended.")
-    print(f"Final Match Scores: {home_team_name} {away_team_name} - {home_team_score} {away_team_score}")
+    print(f"Final Match Scores -> {home_team_name}: {home_team_score} - {away_team_name}: {away_team_score}")
 
 def run_match():
     start_match()

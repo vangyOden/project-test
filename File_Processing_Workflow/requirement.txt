@@ -1,2 +1,5 @@
 pip install "fastapi[standard]"
 pip install uvicorn
+pip install python-multipart 
+pip instal PyPDF2 
+pip instal python-docx

@@ -11,7 +11,7 @@ A scalable backend system built with FastAPI that allows users to:
 APP Features
 
  File Upload
-- Supports **single file upload per request**
+- Supports single file upload per request
 - Accepts:
   - `.pdf`
   - `.docx`
@@ -35,7 +35,7 @@ Content Extraction
 
  Rate Limiting (Per User)
 1. Each user can upload up to files
-2. Within a **3-minute window**
+2. Within a 3-minute window
 3. Based on user IP (for now)
 
 
@@ -141,20 +141,20 @@ No authentication yet (IP-based tracking only)
 
 
 # Future Improvements
-1 Add authentication (JWT / OAuth)
-2 Use Redis for distributed rate limiting
-3 Support batch uploads
-4 Add OCR for scanned documents
-5 Store extracted content in a database
-6 Add analytics & monitoring
+1. Add authentication (JWT / OAuth)
+2. Use Redis for distributed rate limiting
+3. Support batch uploads
+4. Add OCR for scanned documents
+5. Store extracted content in a database
+6. Add analytics & monitoring
 
 
 # Key Learnings
 
 This project demonstrates:
 
-File handling in FastAPI
-Validation strategies for uploads
-Content extraction pipelines
-Rate limiting design
-Clean backend architecture
+1.File handling in FastAPI
+2.Validation strategies for uploads
+3.Content extraction pipelines
+4.Rate limiting design
+5.Clean backend architecture

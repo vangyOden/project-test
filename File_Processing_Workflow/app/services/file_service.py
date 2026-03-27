@@ -1,13 +1,12 @@
 import io
-from typing import List
 from PyPDF2 import PdfReader
 from docx import Document
 
 
-async def process_files(files: List, contents: List):
+async def process_files(files, contents):
     
     results = []
-
+    
     for file, content in zip(files, contents):
         filename = file.filename
         ext = filename.split(".")[-1].lower()

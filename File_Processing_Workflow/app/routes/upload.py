@@ -22,7 +22,7 @@ async def upload_document(
     # reading file content for validation and processing
     content = await file.read()
 
-    # Validate file and get valid file and content (or errors)
+    # this will validate file and get valid file and content (or errors)
     valid_files, valid_contents, errors = validate_files([file], [content])
 
     # Handle invalid file
